@@ -68,19 +68,18 @@ const listObserver = new IntersectionObserver(
     threshold: 1,
   }
 );
+// oberver changes meta description and title
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log("hej");
         const visible = entries
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-        const title = entry.target.getAttribute("data-title");
-        const description = entry.target.getAttribute("data-description");
-
         if (visible.length > 0) {
           const topSection = visible[0].target;
+          const id = topSection.id;
+          history.replaceState(null, null, "#" + id);
           const title = topSection.getAttribute("data-title");
           const description = topSection.getAttribute("data-description");
 
@@ -164,9 +163,7 @@ const createJacketList = async (pageSize = 14, pageNumber = 1) => {
     const jacket = document.createElement("li");
     jacket.classList.add("jacket__list-img-box");
     jacket.innerHTML = `<div data-id=${el.id} class="jacket__list-img-id">ID: ${el.id}</div><img loading="lazy" class="jacket__list-img" src="${el.image}"  alt="profesjonalna kurtka alpinistyczna"/>`;
-    jacket.addEventListener("click", (e) => {
-      const modalId = jacket.childNodes[0].getAttribute("data-id");
-      const modalImg = jacket.childNodes[1].getAttribute("src");
+    jacket.addEventListener("click", () => {
       const jacketModalContent = document.createElement("div");
       jacketModalContent.classList.add("jacket__modal-content");
       jacketModalContent.innerHTML = `<div class="modal__header-close jacket__modal-close">
