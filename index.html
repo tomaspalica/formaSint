@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/heroSection.css" />
+    <link rel="stylesheet" href="styles/featured.css" />
+    <link rel="stylesheet" href="styles/jacketList.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="description" id="dynamic-description" content="sports wear" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__home">
+        <a class="header__logo-wrapper" href="">
+          <svg
+            class="header__logo"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2008_808)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 1H18C20.7614 1 23 3.23858 23 6V18C23 20.7614 20.7614 23 18 23H6C3.23858 23 1 20.7614 1 18V6C1 3.23858 3.23858 1 6 1ZM0 6C0 2.68629 2.68629 0 6 0H18C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6ZM17 7.48578V5H7V19H9.69441V13.5872H16.3757V11.1983H9.69441V7.48578H17Z"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2008_808">
+                <rect width="24" height="24" />
+              </clipPath>
+            </defs>
+          </svg>
+          <div>FORMA'SINT.</div>
+        </a>
+
+        <div class="header__idomods">IDOMODS &lt/></div>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__link-list">
+            <a href="#hero-section">
+              <div class="nav__menu-home" data-value="close">HOME</div>
+            </a>
+            <a href="#featured-section">
+              <div class="nav__menu-featured" data-value="close">
+                FEATURED PRODUCTS
+              </div></a
+            >
+            <a href="#jacket-section">
+              <div class="nav__menu-product" data-value="close">
+                PRODUCT LISTING
+              </div>
+            </a>
+          </li>
+          <li class="nav__menu-button">
+            <div>
+              <img
+                class="nav__menu-icon"
+                lazy="loading"
+                src="images/menu.svg"
+                alt=""
+              />
+            </div>
+            <div>MENU</div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__developer">
+        <img class="header__developer-icon" src="images/user.svg" alt="" />
+        <div>TOMASZ PALICA</div>
+      </div>
+    </header>
+    <!-- -------------------------------------------------- -->
+    <section
+      class="hero-section"
+      id="hero-section"
+      data-title="Forma'Sint | Odzież i sprzęt wspinaczkowy"
+      data-description="Poznaj Forma'Sint - markę dla pasjonatów wspinaczki lodowej i alpejskiej. Wyposażenie stworzone z myślą o ekstremalnych warunkach."
+    >
+      <div class="hero__logo-img-section">
+        <img
+          loading="lazy"
+          src="images/LOGO FORMA.svg"
+          alt=""
+          class="hero__big-logo"
+        />
+        <picture style="width: 100%">
+          <source
+            media="(min-width: 600px)"
+            srcset="images/HERO%20PHOTO-1920.png" />
+          <source
+            media="(min-width: 360px)"
+            srcset="images/HERO%20PHOTO-360.png" />
+          <img
+            class="hero__hero-photo"
+            loading="lazy"
+            src="images/HERO PHOTO-360.png"
+            alt="Ice climber in a yellow and black jacket looking up while ascending a frozen waterfall with climbing gear"
+        /></picture>
+      </div>
+    </section>
+    <!-- -------------------------------------------------- -->
+    <section
+      class="featured-section"
+      id="featured-section"
+      data-title="Bestsellery Forma'Sint | Kurtki i kaski alpinistyczne"
+      data-description="Odkryj nasze bestsellery - profesjonalne kurtki alpinistyczne i limitowane kaski do wspinaczki. Technologia, styl i bezpieczeństwo w jednym."
+    >
+      <div class="featuerd-headline-wrapper">
+        <h3 class="featured__headline-products">Featured products</h3>
+        <h1 class="featured__headline-browse">Browse featured</h1>
+      </div>
+      <div class="swiper">
+        <div class="featured__button-next">
+          <img class="featured__button-arrow" src="images/arrow.svg" alt="" />
+        </div>
+        <div class="swiper-wrapper featured__product-list-wrapper">
+          <div class="swiper-slide featured__product-list-element-wrapper">
+            <div class="featured__product-list-img-box">
+              <div class="featured__product-label featured__product-label-gold">
+                BESTSELLER
+              </div>
+              <img class="heart-icon" src="images/heart.svg" alt="" />
+
+              <img
+                loading="lazy"
+                class="featured__product-list-img"
+                src="images/product_photo_01.png"
+                srcset="images/product_photo_01.png 1x"
+                alt="Men's dark blue winter jacket with orange zippers, designed for mountain climbing and outdoor activities"
+              />
+            </div>
+            <div class="featured__product-list-element-info">
+              <p class="featured__product-name">
+                Dark blue alpine climbing jacket
+              </p>
+              <p class="featured__product-price">€300,00 EUR</p>
+            </div>
+          </div>
+          <div class="featured__product-list-element-wrapper swiper-slide">
+            <div class="featured__product-list-img-box">
+              <div class="featured__product-label featured__product-label-pink">
+                LIMITED EDITION
+              </div>
+              <img class="heart-icon" src="images/heart.svg" alt="" />
+              <img
+                loading="lazy"
+                class="featured__product-list-img"
+                src="images/product_photo_02.png"
+                alt="Bright orange climbing helmet with ventilation holes and adjustable chin straps, designed for outdoor safety"
+              />
+            </div>
+            <div class="featured__product-list-element-info">
+              <p class="featured__product-name">
+                Orange helmet for alpine TOUNDRA
+              </p>
+              <p class="featured__product-price">€300,00 EUR</p>
+            </div>
+          </div>
+          <div class="swiper-slide featured__product-list-element-wrapper">
+            <div class="featured__product-list-img-box">
+              <img class="heart-icon" src="images/heart.svg" alt="" />
+              <img
+                loading="lazy"
+                class="featured__product-list-img"
+                src="images/product_photo_03.png"
+                alt="Men's dark green winter jacket with orange zippers, designed for mountain climbing and outdoor activities"
+              />
+            </div>
+            <div class="featured__product-list-element-info">
+              <p class="featured__product-name">Grey alpine climbing jacket</p>
+              <p class="featured__product-price">€300,00 EUR</p>
+            </div>
+          </div>
+          <div class="swiper-slide featured__product-list-element-wrapper">
+            <div class="featured__product-list-img-box">
+              <div class="featured__product-label featured__product-label-gold">
+                BESTSELLER
+              </div>
+              <img class="heart-icon" src="images/heart.svg" alt="" />
+              <img
+                loading="lazy"
+                class="featured__product-list-img"
+                src="images/product_photo_01.png"
+                alt="Men's dark blue winter jacket with orange zippers, designed for mountain climbing and outdoor activities"
+              />
+            </div>
+            <div class="featured__product-list-element-info">
+              <p class="featured__product-name">
+                Dark blue alpine climbing jacket
+              </p>
+              <p class="featured__product-price">€300,00 EUR</p>
+            </div>
+          </div>
+          <div class="featured__product-list-element-wrapper swiper-slide">
+            <div class="featured__product-list-img-box">
+              <div class="featured__product-label featured__product-label-pink">
+                LIMITED EDITION
+              </div>
+              <img class="heart-icon" src="images/heart.svg" alt="" />
+              <img
+                loading="lazy"
+                class="featured__product-list-img"
+                src="images/product_photo_02.png"
+                alt="Bright orange climbing helmet with ventilation holes and adjustable chin straps, designed for outdoor safety"
+              />
+            </div>
+            <div class="featured__product-list-element-info">
+              <p class="featured__product-name">
+                Orange helmet for alpine TOUNDRA
+              </p>
+              <p class="featured__product-price">€300,00 EUR</p>
+            </div>
+          </div>
+          <div class="swiper-slide featured__product-list-element-wrapper">
+            <div class="featured__product-list-img-box">
+              <img class="heart-icon" src="images/heart.svg" alt="" />
+              <img
+                loading="lazy"
+                class="featured__product-list-img"
+                src="images/product_photo_03.png"
+                alt="Men's dark green winter jacket with orange zippers, designed for mountain climbing and outdoor activities"
+              />
+            </div>
+            <div class="featured__product-list-element-info">
+              <p class="featured__product-name">Grey alpine climbing jacket</p>
+              <p class="featured__product-price">€300,00 EUR</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------- -->
+    <footer
+      class="jacket-section"
+      id="jacket-section"
+      data-title="Profesjonalne Kurtki Alpinistyczne | Odporność i Wydajność w Ekstremach"
+      data-description="Odkryj naszą kolekcję profesjonalnych kurtek alpinistycznych - maksymalna ochrona, oddychalność i trwałość w ekstremalnych warunkach górskich. Sprawdź teraz!"
+    >
+      <div class="jacket__list-headline-wrapper">
+        <h2 class="jacket__list-headline">Number of products per page</h2>
+        <div class="jacket__list-select">
+          <div class="jacket__list-selected-wrapper">
+            <div class="jacket__list-selected" data-value="14">14</div>
+            <div class="jacket__list-select-dropdown">
+              <img loading="lazy" src="images/dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="jacket__list-options"></div>
+        </div>
+      </div>
+      <ul class="jacket__list"></ul>
+    </footer>
+    <div data-value="close" class="modal">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="">
+            <svg
+              class="header__logo"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2008_808)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6 1H18C20.7614 1 23 3.23858 23 6V18C23 20.7614 20.7614 23 18 23H6C3.23858 23 1 20.7614 1 18V6C1 3.23858 3.23858 1 6 1ZM0 6C0 2.68629 2.68629 0 6 0H18C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6ZM17 7.48578V5H7V19H9.69441V13.5872H16.3757V11.1983H9.69441V7.48578H17Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2008_808">
+                  <rect width="24" height="24" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <div class="modal__header-close">
+            <div class="modal__header-close-img-wrapper">
+              <img
+                data-value="close"
+                loading="lazy"
+                src="images/iconX.svg"
+                alt=""
+              />
+            </div>
+            <div data-value="close">CLOSE</div>
+          </div>
+        </div>
+        <div class="modal__menu">
+          <a href="#hero-section">
+            <div class="modal__menu-home" data-value="close">HOME</div>
+          </a>
+          <a href="#featured-section">
+            <div class="modal__menu-featured" data-value="close">
+              FEATURED PRODUCTS
+            </div></a
+          >
+          <a href="#jacket-section">
+            <div class="modal__menu-product" data-value="close">
+              PRODUCT LISTING
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div data-value="close" class="jacket__modal"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
